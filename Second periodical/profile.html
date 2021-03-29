@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+	<meta name="viewport" content="width; initial-scale=1.0;">
+</head>
+<body>
+<div class="topnav topnav-mobile">
+  <img src="elms_logo.png" class="elms-logo">
+  <a href="#section4">Profile</a>
+  <a href=""><img src="bell.png" width="20px" height="20px"></a>
+  <a href=""><img src="calendar.png" width="20px" height="20px"></a>
+     <a href="index.html"><img src="home.png" width="20px" height="20px"></a>
+</div>
+<div class="side-nav"> 
+	<a href="index.html" class="side-nav-1"><img src="home.png" width="30" height="30" style="position: relative;left: 5px;"><p class="text-nav-position0">Home</p></a>
+  <a href="#section3" class="side-nav-2"><img src="book.svg" width="20" height="20" style="position: relative;left: 5px;"><p class="text-nav-position1" style="position:relative; left: 2px;">Courses</p></a>
+  <a href="#section2" class="side-nav-3"><img src="teacher.svg" width="20" height="20" style="position: relative;left: 5px;"><p class="text-nav-position2" style="position: relative;left: 4px;">Paths</p></a>
+   <a href="#section1" class="side-nav-4"><img src="groups.png" width="20" height="20" style="position: relative;left: 5px;"><p class="text-nav-position3" style="position: relative;left: 4px;">Groups</p></a>
+   <a href="#section1" class="side-nav-4"><img src="catalog.png" width="20" height="20" style="position: relative;left: 5px;"><p class="text-nav-position3" style="position: relative;left: 4px;">Catalog</p></a>
+   <a href="#section1" class="side-nav-4"><img src="student.svg" width="20" height="20" style="position: relative;left: 5px;"><p class="text-nav-position3" style="position: relative;left: 4px;">Users</p></a>
+   <div class="line-end"></div>
+   <center><h3 style="color: white;">Courses</h3></center>
+   <a href="subject1.html" class="side-nav-4"><img src="javascript.png" width="30" height="30" style="position: relative;left: 5px;"><p class="text-nav-position3" style="position: relative;left: -2px;">Comprog1</p></a>
+   <a href="subject2.html" class="side-nav-4"><img src="c.png" width="30" height="30" style="position: relative;left: 5px;"><p class="text-nav-position3" style="position: relative;left: -2px;">Comprog2</p></a>
+</div>
+<div class="right-container">
+<div class="right-box-todo">
+	<b>To-do</b>
+	<br>
+	<img src="assignment.png" class="btn-assignment">
+	<a href="#" onclick="toggle_visibility('foo');" style="text-decoration: none;">2 Assignments</a>
+<div id="foo" style="display: none;">
+	<a href="subject1assignments.html" class="assignment-button1">Computer Programming 1</a>
+	<br>
+  <a href="#" class="assignment-button2">Computer Programming 2</a>
+</div>
+</div>
+	<br>
+<div class="right-box-announcements">
+	<b>Announcements</b>
+	<br>
+	<a href="#" class="assignment-button2">Always do your assignment!</a>
+</div>
+	<br>
+<div class="right-box-today">
+	<b>Today</b>
+	<br>
+	<a href="subject1assignments.html" class="assignment-button2">Second Periodical Exam</a>
+</div>
+<br>
+<div class="right-box-upcoming">
+	<b>Upcoming</b>
+	<p class="upcoming-date">Monday, Jan 18</p>
+	<a href="subject2assignments.html" class="assignment-button2">ILS Computer Programming</a>
+</div>
+<br>
+<div class="right-box-awards">
+	<b>Awards</b>
+</div>
+<br>
+<div class="right-box-online">
+	<b>Online</b>
+</div>
+
+</div>
+<div class="container-dashboard" style="background-color: white; margin-top: -420px; height: 700px;">
+<div class="profile-dashboard">
+<div class="profile-background"></div>
+<div class="profile-position"><img src="profilepicture.jpg" alt="Avatar" class="avatar"><h3 class="name-position">Jesse King</h3><h4 class="section-position">IT-202</h4></div>
+<h5 class="campus-position">STI College Novaliches</h5><a href="subject1.html"><button class="button" style="margin-left: 88%; position: relative;top: -30px;">Edit</button></a>
+<p style="color: green; margin-top: -70px; margin-left: 16px;">1000 assignments accomplished</p>
+<p style="color: red; margin-top: -20px; margin-left: 16px;"> 2 assignments ongoing</p>
+</div>
+<h4 style="color: blue; margin-top: 50px; margin-left: 16px;">About</h4>
+</div>
+
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'none')
+          e.style.display = 'block';
+       else
+          e.style.display = 'none';
+    }
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width; initial-scale=1.0;">
+</head>
+<body>
+   <div class="topnav topnav-mobile">
+  <img src="elms_logo.png" class="elms-logo"> <!-- mobile note -->
+  <button onclick="document.getElementById('id01').style.display='block'" class="login">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="index.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="student.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </form>
+</div>
+  <a href="#section3" style="margin-right: 120px;">STI eLMS App</a>
+  <a href="#section2">ONE STI Learning Model</a>
+   <a href="#section1">FAQ</a>
+</div>
+<div class="slideshow-container slideshow-container-mobile ">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="register.jpg" style="width:150%; height: 748px; object-fit: cover;margin-left: -220px;">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="device.jpg" style="width:150%; margin-left: -220px;">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="elms2.jpg" style="width:150%; margin-left: -220px; height: 748px;">
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+ <span class="dot dot-mobile" onclick="currentSlide(1)"><b>1</b></span>
+  <span class="dot dot-mobile" onclick="currentSlide(2)"><b>2</b></span>
+  <span class="dot dot-mobile" onclick="currentSlide(3)"><b>3</b></span>
+</div>
+	<br>
+</div>
+<div class="box">&nbsp;</div>
+<div class="duck duck-mobile">
+	<img src="Graphic.svg" width="230" height="170" class="title-logo1">
+	<img src="Graphic2.svg" width="230" height="170" class="title-logo2">
+	<img src="Graphic3.svg" width="230" height="170" class="title-logo3">
+	<img src="Graphic4.svg" width="230" height="170" class="title-logo4">
+	<div class="title">
+	<p class="title1"><b>Early access to learning modules</b></p> 
+	<p class="title2"><b>Interactive activities and assessments</b></p>
+	<p class="title3"><b>Student attendance tracking</b></p>
+	<p class="title4"><b>Collaborate with classmates</b></p>
+	</div>
+	<div class="title-description">
+		<div class="block-description"><p class="disc1">Students can study ahead, review past lessons, and watch instructional videos with a click or a tap of a button on any gadget.</p></div>
+		<div class="block-description2"><p class="disc2">Students can test their knowledge and skills through interactive polls, quizzes, and debates, among others.</p></div>
+		<div class="block-description3"><p class="disc3">Marking student attendance for an online class is more convenient whether the student logs in early, on time, late, or is offline.</p></div>
+		<div class="block-description4"><p class="disc4">Marking student attendance for an online class is more convenient whether the student logs in early, on time, late, or is offline.</p></div>
+
+	</div>
+</div>
+<div class="parallax2"><div class="inside-parallax2"><img src="group.png" width="400" height="230" class="inside-parallax2design"></div></div>
+<div class="container1"></div>
+<div class="transpo"><p class="transpo-design"><b>eLMS makes everyone lives easier</b><br></div>
+	<div class="device-parallax"><div class="device-yellow"><center><h4>eLMS is about learning for everyone; you can do many things like quizzes, games, and read modules. It makes everyone's lives easier.</h4></center></div></div>
+
+	<footer style="background-color: red; color: white;">©2021 by Jesse King</footer>
+
+<script type="text/javascript">var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+      function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+    }
+  }
+}
+</script>
+</body>
+</html>
