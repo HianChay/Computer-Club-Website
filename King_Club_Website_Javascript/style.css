@@ -1,0 +1,607 @@
+* {
+  box-sizing: border-box;
+}
+html{
+      scroll-behavior: smooth;
+  }
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+/* Desktop view */
+@media screen and (min-width: 600px) {
+  .background-cover{
+    background-color: blue;
+    width: 100%;
+    height: 180px;
+  }
+  .background-line{
+    background-color: green;
+    width: 100%;
+    height: 3px;
+  }
+  .profile-about{
+    background-color: white;
+    float: left;
+    height: 500px;
+    width: 300px;
+  }
+  .profile-about2{
+    background-color: white;
+    float: left;
+    height: 500px;
+    width: 800px;
+  }
+  .profile-about3{
+    background-color: white;
+    float: left;
+    height: 500px;
+    width: 249px;
+  }
+  .column {
+    background-color: white;
+  float: left;
+  width: 20%;
+  height: 1000px; /* Should be removed. Only for demonstration */
+}
+.column b:hover{
+  color: red;
+}
+.column2 b:hover{
+  color: red;
+}
+.column1 {
+  background-color: white;
+  float: left;
+  width: 58%;
+  height: 1000px; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  background-color: white;
+  float: left;
+  width: 21.5%;
+  height: 1000px; /* Should be removed. Only for demonstration */
+}
+.position-name{
+  display: inline-block;
+  margin-left: 4px;
+}
+.text-margin{
+  margin: 10px;
+}
+.text-margin2{
+  margin: 10px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.avatar2{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.avatar3{
+  vertical-align: middle;
+  margin-top: 7px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.avatar4{
+  vertical-align: middle;
+  margin-top: 7px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.avatar5{
+  vertical-align: middle;
+  margin-top: 7px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.avatar6{
+  vertical-align: middle;
+  margin-top: 7px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.line-profile{
+  background-color: black;
+  width: 100%;
+  height: 1px;
+}
+.line-profile2{
+  background-color: black;
+  margin-left:auto; 
+  margin-right: auto; 
+  width: 90%;
+  height: 1px;
+}
+.welcome-text{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  width: 50%;
+}
+.number-line{
+  display: inline;
+}
+.newsfeed-container{
+  background-color: white;
+  width: 100%;
+  height: 1800px;
+}
+.profile-background{
+  background-color: white;
+  border-radius: 25px;
+  border: 0.5px solid gray;
+  width: 600px;
+  height: 160px;
+  margin-left: 15px;
+  margin:auto;
+}
+textarea{
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  width: 500px;
+  height: 92px;
+  font-size: 20px;
+  margin-left:60px;
+  margin-top: -30px;
+  border: none;
+  resize: none;
+}
+.button {
+  background-color: lightblue; /* Green */
+  border-radius: 25px;
+  float: right;
+  border: none;
+  color: black;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
+}
+.post-background{
+  background-color: #e1e4e8;
+  border-radius: 25px;
+  width: 600px;
+  height: 700px;
+  margin: auto;
+}
+.time{
+  display: inline;
+  position: relative;
+  left: 12px;
+  top: 9px;
+}
+.post-image-container{
+  background-color: blue;
+  width: 600px;
+  height: 230px;
+}
+
+.container-comment{
+  background-color: #add2ff;
+  position: relative; top: -30px;
+  left: 15px;
+  border-radius: 25px;
+  width: 500px;
+  height: 60px;
+  display: inline-block;
+}
+ .topnav {
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   z-index: 1;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 35px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+  z-index: 100;
+}
+
+.topnav a:hover {
+  background-color:#87ceeb;
+}
+  .parallax {
+  /* The image used */
+
+  background-image: url("Aztech.jpg");
+
+
+  /* Set a specific height */
+  min-height: 600px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.duck{
+  height:250px;
+  padding: 2px;
+  background-color: #003256;
+  color: white;
+  font-size:36px
+}
+.text{
+  color: white;
+  background-color: red;
+  height: 250px;
+  opacity: 0.7;
+}
+.text-background{
+  position: relative;
+  top: 40%;
+  font-size: 20px;
+}
+.box{
+  height: 3px;
+  border-style: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  /* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index: 1;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  z-index: 1;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  z-index: 1;
+}
+
+/* Caption text */
+.text {
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 5px;
+  width: 97.5%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  text-align: center;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.background1{
+
+  background-image: url("games.gif");
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background2{
+  background-image: url("Aztech1.jpg");
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gradient2{
+  background-color: rgba(34,49,63,0.5);
+  height: 650px;
+  color: white;
+  font-family: Open Sans;
+  text-align: center;
+}
+.Adviser{
+  border-radius: 50%;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.container2{
+  font-family: Open Sans;
+  text-align: center;
+}
+.container2{
+  line-height: 0.8;
+}
+.dropbtn{
+  position: absolute;
+  visibility: hidden;
+}
+.link-class{
+  position: absolute;
+  visibility: hidden;
+}
+.space-mobile{
+  position: absolute;
+  visibility: hidden;
+}
+.dropdown-container{
+  position: absolute;
+  visibility: hidden;
+}
+.text-mobile{
+  visibility: hidden;
+  position: absolute;
+}
+.container-mobile{
+  visibility: hidden;
+  position: absolute;
+}
+}/* Mobile view para sa mga Phones */
+
+@media screen and (max-width: 600px) {
+  .column {
+    background-color: red;
+  float: left;
+  width: 20%;
+  height: 600px; /* Should be removed. Only for demonstration */
+  visibility: hidden;
+  position: absolute;
+}
+.text-mobile{
+  color: black;
+  font-family: 'Open Sans';
+  margin: 0;
+}
+.text-margin{
+  margin: 4px;
+}
+.column1 {
+  background-color: white;
+  float: left;
+  width: 100%;
+  height: 600px; /* Should be removed. Only for demonstration */
+  visibility: hidden;
+  position: absolute;
+}
+.column2 {
+  background-color: orange;
+  float: left;
+  width: 21.5%;
+  height: 600px; /* Should be removed. Only for demonstration */
+  visibility: hidden;
+  position: absolute;
+}
+   .topnav-mobile {
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topnav-mobile a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav-mobile a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav-mobile a.active {
+  border-bottom: 3px solid red;
+}
+  .slideshow-container-mobile{
+    position: absolute;
+    visibility: hidden;
+  }
+  .dot-mobile{
+    visibility: hidden;
+  }
+  .duck-mobile{
+    height:280px;
+  padding: 2px;
+  background-color: #003256;
+  color: white;
+  font-size:36px
+  }
+  .container2-mobile{
+    font-family: Open Sans;
+  text-align: center;
+  }
+  .background2-mobile{
+    background-image: url("Aztech1.jpg");
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .gradient2-mobile{
+    background-color: rgba(34,49,63,0.5);
+  height: 650px;
+  color: white;
+  font-family: Open Sans;
+  text-align: center;
+  }
+  .Adviser-mobile{
+    border-radius: 50%;
+  }
+  .parallax-mobile{
+     background-image: url("cover-mobile.jpg");
+  /* Set a specific height */
+  min-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  .background1-mobile{
+    background-image: url("games.gif");
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  }
+  .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+  .dropbtn2 {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  display: inline-block;
+  z-index: -1;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 4%;
+  background-color: #f1f1f1;
+  min-width: 160px;
+   overflow: scroll;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: -1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  z-index: -1;
+}
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.dropdown-container{
+  height: 1270px;
+  text-align: center;
+}
+.space-mobile{
+}
+.link-class{
+  font-family: Open Sans;
+}

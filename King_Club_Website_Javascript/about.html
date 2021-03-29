@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="Vanilla.js"></script> 
+<meta name="viewport" content="width; initial-scale=1.0;">
+</head>
+<body>
+<div class="topnav topnav-mobile">
+  <img src="AZtech_logo.jpg" style="position: relative; left: 3%; height: 50px;">
+  <a href="profile.html">Profile</a>
+  <a href="about.html">About</a>
+  <a href="index.html">Home</a>
+</div>
+<div id="section1"></div>
+<div  class="parallax parallax-mobile"></div>
+<div class="box">&nbsp;</div>
+<div class="duck duck-mobile">
+	
+	<center><h3>Welcome to AZtech!</h3></center>
+	<center><p style="font-size: 20px;">It's all about Computer games, programming, and digital arts.</p></center>
+	<center><p style="font-size: 25px;">"The Computer was born to solve <br>problems that did not exist before."</p>
+</div>
+<br>
+<div id="section2"></div>
+<center><h1>CLUB ACTIVITIES</h1></center>
+<div class="dropdown-container">
+	<center><h1 class="link-class">Cosplay</h1></center>
+	<center><img src="activity0.jpg" style="width: 90%"></center>
+	<center><p style="font-family: Open Sans;">This is the cosplay activity of AZtech last year, students dressing up as a character from a movie, book, or video game</p></center>
+	<center><h1 class="link-class">Live Character Creation</h1></center>
+	<center><img src="activity1.jpg" style="width: 90%"></center>
+	<center><img src="activity2.jpg" style="width: 90%"></center>
+	<center><p style="font-family: Open Sans;">Live Character Creation. In this club activity, they create Live Character Creation. You will send them the picture you want, anime character, cartoon character, or yourself. Also, you must pay them around 100 Pesos - 150 Pesos. After that, they will do it, and you will see the process of how they do the live character creation using digital arts. It's amazing and fun.</p></center>
+</div>
+<div class="slideshow-container slideshow-container-mobile ">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="activity0.jpg" style="width:100%; height: 748px; object-fit: cover;">
+    <div class="text"><p class="text-background">This is the cosplay activity of AZtech last year, students dressing up as a character from a movie, book, or video game</p></div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="activity1.jpg" style="width:100%">
+    <div class="text"><p class="text-background">Live Character Creation. In this club activity, they create Live Character Creation. You will send them the picture you want, anime character, cartoon character, or yourself. Also, you must pay them around 100 Pesos - 150 Pesos. After that, they will do it, and you will see the process of how they do the live character creation using digital arts. It's amazing and fun.</p></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="activity2.jpg" style="width:100%">
+    <div class="text"><p class="text-background">Live Character Creation. In this club activity, they create Live Character Creation. You will send them the picture you want, anime character, cartoon character, or yourself. Also, you must pay them around 100 Pesos - 150 Pesos. After that, they will do it, and you will see the process of how they do the live character creation using digital arts. It's amazing and fun.</p></div>
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+ <span class="dot dot-mobile" onclick="currentSlide(1)"><b>1</b></span>
+  <span class="dot dot-mobile" onclick="currentSlide(2)"><b>2</b></span>
+  <span class="dot dot-mobile" onclick="currentSlide(3)"><b>3</b></span>
+</div>
+	<br>
+</div>
+<div class="background1 background1-mobile"></div>
+<br>
+<div id="section3"></div>
+<div></div>
+<div></div>
+<div class="container2 container2-mobile">
+<p style="font-size: 30px;">About AZtech</p>
+<br>
+<p>Do you like to make games using UNITY?</p>
+<p>
+don't worry this club teaches how to make a game using UNITY and programming language called C#.</p>
+<p>Learning how to make games improve your logical and creative thinking. Also, teaching games turn your</p>
+<p> creative imagination into reality.</p>
+<img src="unity.png" style="height: 100px;">   <img src="Csharp.png" style="height: 100px;">
+<br><br><br>
+<p>Do you want to learn how to animate and convert it into your character movements in games?</p>
+<p> In this club, we can not just keep our character without animation or movements, we need to bring</p>
+<p> the character to life and bring some movements using PISKEL APP.</p>
+<img src="piskel.png" style="height: 100px;">
+<br><br><br>
+<p> AZtech club is from STI College Novaliches Senior High School.</p>
+This is done to make students learn more about their skills and interact with their schoolmates.</p>
+<p></p>
+<img src="AZtech_logo.jpg" style="height: 100px;"> <img src="STI.png" style="height: 100px;">
+<br><br>
+</div>
+<div class="background2 background2-mobile" id="section4">
+	<div class="gradient2 gradient2-mobile"><br>
+		<h1>Adviser</h1>
+		<img src="Adviser.jpg"  class="Adviser Adviser-mobile" alt="Avatar" style="width:200px">
+		<h2>Norvin Shaq Lintag</h2>
+		<p> Sir Shaq Lintag is an IT professor at STI College Novaliches,</p>
+		<p> and he is the adviser of the AZtech club. He is a game developer.</p>
+		<p> A professor and also a game developer, he developed Downgeon.</p>
+	</div>
+</div>
+
+</body>
+
+<script type="text/javascript">var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</html>

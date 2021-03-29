@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+  @media screen and (min-width: 600px){
+    body {
+  background-image: url("background.gif");
+ height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  width: 130px;
+  margin-left: 2%;
+}
+.user-size{
+  width: 80%;
+  height: 20px;
+  margin-top: 5%;
+  margin-left: 2%; 
+}
+.email-size{
+	width: 80%;
+  height: 20px;
+	margin-left: 2%;
+}
+
+.pass-size{
+  width: 80%;
+  height: 20px;
+  margin-left: 2%;
+}
+/* Style the container for inputs */
+.container {
+  background-color: hsla(0, 0%, 0%, 0.67);
+  padding: 5px;
+  width: 500px; 
+  height: 700px;
+  margin-top: 40px;
+  margin-left: 430px;
+}
+.blank{
+  background-color: #ffffff00;
+  position: relative;
+  padding: 5px;
+  width: 500px;
+  top: 150px;
+  left: 430px;
+}
+.avatar{
+  position: absolute;
+   vertical-align: middle;
+   top: -40px;
+   left: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.sign-up{
+  color: white;
+  font-family: Open-sans;
+  margin-left: 330px;
+  margin-top: -45px;
+  line-height: 1.2;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+}
+  @media screen and (max-width: 600px){
+
+  }
+</style>
+<body>
+<div class="container">
+  <form action="redirect.html">
+    <center><h1 style="color: white; margin-left: -30px;">Register</h1></center>
+    <input type="text" class="user-size" id="usrname" name="usrname" placeholder="Last Name" required>
+    <br>
+     <input type="text" class="user-size" id="usrname" name="usrname" placeholder="First Name" required>
+    <br>
+    <input type="text" class="user-size" id="usrname" name="usrname" placeholder="Middle Name" required>
+    <br>
+    <input type="number" class="user-size" id="usrname" name="usrname" placeholder="Age" required>
+    <br>
+    <input type="text" class="user-size" id="usrname" name="usrname" placeholder="Section" required>
+    <br>
+    <input type="email" class="email-size" id="email" name="email" placeholder="Email" required>
+    <br>
+    <input type="text" class="user-size" id="usrname" name="usrname" placeholder="Username" required>
+    <br>
+    <input type="password" class="pass-size" id="psw" name="psw" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    <br>
+    <input type="password" class="pass-size" id="confirm_psw" name="confirm_psw" placeholder="Confirm password" required>
+    <br>
+    <input type="submit" value="Submit">
+    <p class="sign-up">Already have an account?<br>Click <a href="login.html" style="color: lightblue;">here</a> to sign in</p>
+  </form>
+</div>
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+
+  <script type="text/javascript">
+   var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+  var password = document.getElementById("psw")
+  , confirm_password = document.getElementById("confirm_psw");
+
+function validatePassword(){
+  if(password.value != confirm_psw.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+psw.onchange = validatePassword;
+confirm_psw.onkeyup = validatePassword;
+}
+  </script>
+</html>
